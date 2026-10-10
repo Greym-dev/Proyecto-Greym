@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@theme {
+  --color-spotify: #1DB954;
+  --color-youtube: #FF0000;
+}

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+    <defs>
+        <!-- Un degradado plateado muy elegante para la letra -->
+        <linearGradient id="g-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#ffffff" />
+            <stop offset="100%" stop-color="#8a8a8a" />
+        </linearGradient>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="30" result="blur" />
+            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+        </filter>
+    </defs>
+    
+    <!-- Fondo ultra oscuro Noir con bordes sutilmente redondeados -->
+    <rect width="512" height="512" rx="128" fill="#080808" />
+    
+    <!-- Resplandor de fondo estilo Spotify (muy sutil) -->
+    <circle cx="256" cy="256" r="140" fill="#1DB954" opacity="0.12" filter="url(#glow)" />
+    
+    <!-- La letra G minimalista y geométrica -->
+    <path d="M 340,256 H 256 v 45 h 40 c -14,30 -44,45 -74,45 -55,0 -95,-45 -95,-90 0,-45 40,-90 95,-90 35,0 60,18 72,40 l 40,-25 C 315,145 275,121 222,121 140,121 82,181 82,256 c 0,75 58,135 140,135 75,0 125,-55 125,-120 v -15 z" fill="url(#g-grad)" />
+</svg>
